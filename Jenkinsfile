@@ -1,12 +1,12 @@
 pipeline {
 	tools {
-        maven 'Maven'
-        jdk 'JDK8'
-    }
+        	maven 'Maven'
+        	jdk 'JDK8'
+        }
 	agent any
 	stages {
 		stage('--clean--') {
-			ste[sps {
+			steps {
 				bat "mvn clean"
 			}
 		}
@@ -20,4 +20,5 @@ pipeline {
 				bat "mvn package"
 			}
 		}
+	}
 }
