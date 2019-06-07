@@ -20,5 +20,4 @@ pipeline {
 				bat "mvn package"
 			}
 		}
-	}
 }
